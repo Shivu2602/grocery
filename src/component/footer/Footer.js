@@ -1,6 +1,9 @@
 import React from 'react'
 import './footer.css'
 import logoimage from './logo.jpeg';
+import { NavLink } from 'react-router-dom';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Footer = () => {
     const year = new Date().getFullYear();
@@ -9,30 +12,28 @@ const Footer = () => {
         <footer>
             <div className='footer_container'>
                 <div className='footer_details_one'>
-                    <h3>get to know US</h3>
-                    <p>About us</p>
-                    <p>Careers</p>
-                    <p>Press Releases</p>
-                    <p>Amazon Cares</p>
+                    <h3>About Us</h3>
+                    <div className="links">
+                        <NavLink to="/about_us" className="onedata">About Us</NavLink><br />
+                        <NavLink to="/contact_us" className="onedata">Contact US</NavLink><br />
+                        <NavLink to="tandc" className="onedata">Terms and Conditions</NavLink><br />
+                    </div>
                 </div>
                 <div className='footer_details_one'>
-                    <h3>get to know US</h3>
-                    <p>About us</p>
-                    <p>Careers</p>
-                    <p>Press Releases</p>
-                    <p>Amazon Cares</p>
+                    <h3>Get In Touch</h3>
+                    <div className="links">
+                        <NavLink to="https://www.instagram.com/thegyansabha/" className="onedata"><InstagramIcon /></NavLink>
+                        <NavLink to="https://www.facebook.com/thegyansabha" className="onedata"><FacebookIcon /></NavLink>
+                    </div>
                 </div>
                 <div className='footer_details_one'>
-                    <h3>get to know US</h3>
-                    <p>About us</p>
-                    <p>Careers</p>
-                    <p>Press Releases</p>
-                    <p>Amazon Cares</p>
+                    <h3>Address</h3>
+                    <p>Gadhave Colony, Shastri Nagar Road, Shastri Nagar, Kothrud, Pune, Maharashtra, 411038</p>
                 </div>
             </div>
             <div className='lastdetails'>
                 <img src={logoimage} alt="Logo" />
-                <p>Conditions of Use & Sale &nbsp; &nbsp;&nbsp;  Privacy Notice  &nbsp; &nbsp;&nbsp; Interest-Based Ads  &nbsp; &nbsp;&nbsp;  © 1996-{year}, Amazon.com, Inc. or its affiliates</p>
+                <p>© 2023 All rights reserved. Bajrang Makhana Foodstuff</p>
             </div>
         </footer>
     )
