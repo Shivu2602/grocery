@@ -9,7 +9,7 @@ const SubNav = () => {
             <div className="nav_data">
                 <div className="left_data">
                     <NavLink to="/"><p>All</p></NavLink>
-                    <NavLink to="/"><p>Dry Fruits</p></NavLink>
+                    <NavLink to="/dryfruits"><p>Dry Fruits</p></NavLink>
                     <NavLink to="/"><p>Makhana</p></NavLink>
                     <NavLink to="/"><p>Oil and ghee</p></NavLink>
                     <NavLink to="/"><p>Other Products</p></NavLink>
